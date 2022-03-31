@@ -9,15 +9,13 @@ namespace DevInBank.classes.Models
 {
     public class Conta
     {
-        public string ContaID { get; set; } = "";
-        public string NomeTitular { get; set; } = "";
+        public string ContaID { get; set; }
+        public string NomeTitular { get; set; } 
         public long CPF { get; set; } //validar
-        public string Endereco { get; set; } = "";
+        public string Endereco { get; set; }
         public decimal RendaMensal { get; set; }
         public Agencias Agencia { get; set; }
         public decimal Saldo { get; set; }
-        public decimal SaldoInicial { get; set; }
-        public int Sequecia { get; set; } = 1;
         public Contas Tipo { get; set; }
 
         //Atributos de Contas Correntes
